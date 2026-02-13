@@ -30,7 +30,13 @@ const Index = () => {
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
           <p className="text-primary-foreground/80 text-sm uppercase tracking-[0.3em] mb-4 animate-fade-up font-sans font-medium">
-            MOL Indonesia · PT MOL Ship Agency Indonesia · PT MOL Gas Maritime Solutions Indonesia
+            MOL Indonesia 
+            </p>
+            <p className="text-primary-foreground/80 text-sm uppercase tracking-[0.3em] mb-4 animate-fade-up font-sans font-medium">
+            · PT MOL Ship Agency Indonesia 
+            </p>
+            <p className="text-primary-foreground/80 text-sm uppercase tracking-[0.3em] mb-4 animate-fade-up font-sans font-medium">
+            · PT MOL Gas Maritime Solutions Indonesia
           </p>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             From the Oceans, We Provide a Prosperous Future
