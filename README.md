@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
+# Website Refresh
 
-## Project info
+Modern rebuild of the company website using a lightweight static frontend stack and automated edge deployment.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+This repository contains the source code for the refreshed website.  
+The goal of the project is to provide a fast, maintainable, and easily deployable alternative to legacy CMS-based hosting.
 
-**Use Lovable**
+Key objectives:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Improve performance and load time
+- Simplify deployment workflow
+- Maintain version-controlled changes
+- Enable scalable edge hosting
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Frontend
+- HTML5 / CSS3
+- JavaScript (ES Modules)
+- Vite (build tooling)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Runtime / Package Management
+- Bun  
+  or  
+- Node.js + npm
 
-Follow these steps:
+### Deployment & Hosting
+- GitHub — Version control
+- Cloudflare Pages — CI/CD pipeline
+- Cloudflare Edge CDN — Static hosting
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Development Tools
+- VSCode
+- Git CLI
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Project Structure
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+/
+├── public/ # Static assets
+├── src/ # Application source files
+├── index.html # Entry point
+├── package.json # Dependencies & scripts
+├── vite.config.js # Build configuration
+└── README.md
+
+
+---
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+
+## Start development server:
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+## Preview locally:
+http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment Workflow
 
-**Use GitHub Codespaces**
+Deployment is automated via Cloudflare Pages.
+- Standard Workflow
+- Make changes locally
+- Commit updates
+    git add .
+    git commit -m "Update site content"
+    git push
+## Cloudflare will automatically:
+Pull latest code
+Install dependencies
+Run build
+Deploy to edge network
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customization
+Page Title
+Edit
+    index.html
 
-## What technologies are used for this project?
+Layout / Components
+Modify files under:
+    src/
 
-This project is built with:
+Branding / Metadata
+Review:
+    public/manifest.json
+    index.html meta tags
+    favicon assets
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Goals
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Fast static delivery
+- Reduced operational overhead
+- Infrastructure-friendly deployment model
+- Clear version tracking
+- Maintainable frontend structure
